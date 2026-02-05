@@ -1,0 +1,47 @@
+PROJETO: PAC-MAN 
+DISCIPLINA: Técnicas de Programação II - 2025.2
+ALUNO: Luiz Gustavo Oliveira Silva
+MATRÍCULA: 2024104354
+
+
+1. DESCRICAO
+
+Este projeto consiste em uma implementação em Java do jogo 
+Pac-Man. O sistema gera labirintos aleatórios e gerencia a 
+interação entre o Jogador, um Fantasma e o ambiente.
+
+2. ALGORITMO DE GERACAO DO LABIRINTO
+
+Para a construção do labirinto, foi implementado o algoritmo "Randomized 
+Depth-First Search" (Busca em Profundidade Aleatória) utilizando a 
+abordagem iterativa com Lista (Backtracking).
+
+3. ESTRUTURA E CONCEITOS DE ORIENTACAO AO OBJETO APLICADOS
+
+O projeto foi estruturado seguindo os pilares da POO:
+
+Encapsulamento: todos os atributos de classes (como coordenadas 
+e estados das paredes na classe Célula) são privados (private), sendo 
+acessados apenas via Getters e Setters.
+  
+Herança e classe abstrata: A classe abstrata "Personagem" define a base 
+do personagem, como sua posição e suas siglas
+  
+Polimorfismo: As classes Jogador e Fantasma herdam de Personagem 
+mas implementam funções diferentes
+  
+Interface: A interface "Paredes" define o contrato de movimento e as 
+suas direções, CIMA, BAIXO, etc.
+
+4. REGRAS IMPLEMENTADAS
+
+Vitória: O jogador consome todos os alimentos do mapa.
+Derrota: O Jogador colide com o Fantasma.
+Movimentação do Jogador: Respeita os limites das paredes do labirinto.
+Movimentação do Fantasma: Atravessa paredes e movendo aleatoriamente.
+Controles via teclado (W, A, S, D).
+
+5. COMO EXECUTAR
+
+Para rodar, basta compilar e executar a classe principal 'App.java' 
+localizada na pasta 'src'.
